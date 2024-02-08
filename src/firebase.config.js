@@ -4,6 +4,8 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+const apikey = import.meta.env.VITE_apiKey;
+console.log('mamun', apikey);
 const firebaseConfig = {
   apiKey:import.meta.env.VITE_apiKey,
   authDomain:import.meta.env.VITE_authDomain,
@@ -15,4 +17,4 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export default app
+export default app;

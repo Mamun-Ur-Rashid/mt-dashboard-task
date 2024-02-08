@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 
 
 const DashboardLayout = () => {
@@ -29,7 +29,14 @@ const DashboardLayout = () => {
             <div className='w-full h-screen bg-gray-700'>
                 <div>
                     <header className='bg-gray-200 h-10 p-2'>
-                        this is header
+                        <div className='flex flex-row justify-between'>
+                            <div>
+                                <h3>MT-Dashborad</h3>
+                            </div>
+                            <div>
+                                <Link to="/login">Login</Link>
+                            </div>
+                        </div>
                     </header>
                 </div>
                 <div>
